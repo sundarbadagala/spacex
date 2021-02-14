@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'react-slideshow-image/dist/styles.css'
 import { Zoom } from 'react-slideshow-image';
+import './Gallery.css'
 
 const Slideshow = (props) => {
  
@@ -31,8 +32,8 @@ const Slideshow = (props) => {
     <div>
       <Zoom {...zoomOutProperties}>
         {props.images.map((each, index) => (
-          <div key={index} style={{width: "100%"}}>
-            <img style={{ objectFit: "cover", width: "100%", height:Height} } src={each} alt='' />
+          <div key={index} style={{width: "60%"}} className='gallery-div'>
+            <img style={{ objectFit: "cover", width: "100%", height:Height} } src={each} alt='' className='gallery-block'/>
           </div>
         ))}
       </Zoom>

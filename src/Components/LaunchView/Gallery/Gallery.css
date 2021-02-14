@@ -1,0 +1,9 @@
+.gallery-div{
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.gallery-block{
+    /* border: 1px solid red; */
+    margin: auto;
+    border-radius: 10px;
+}
